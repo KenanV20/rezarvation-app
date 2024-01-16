@@ -17,6 +17,7 @@ public class ReservationResponseDto {
     LocalDateTime appointmentDate;
     Boolean activeStatus;
     Long doctorId;
-    Long patientId;
+
+    PatientResponseDto patient;
 
 }

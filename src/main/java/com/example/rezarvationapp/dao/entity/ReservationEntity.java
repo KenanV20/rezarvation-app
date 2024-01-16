@@ -36,7 +36,7 @@ public class ReservationEntity {
     @JoinColumn(name="doctor_id",referencedColumnName = "id")
     DoctorEntity doctorEntity;
 
-    @ManyToOne(cascade = CascadeType.MERGE)
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name="patient_id",referencedColumnName = "id")
     PatientEntity patientEntity;
 

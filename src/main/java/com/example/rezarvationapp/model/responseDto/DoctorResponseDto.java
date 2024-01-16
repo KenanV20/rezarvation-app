@@ -1,8 +1,10 @@
 package com.example.rezarvationapp.model.responseDto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
 
@@ -20,11 +22,8 @@ public class DoctorResponseDto {
 
     String phoneNumber;
 
-    LocalTime entryTime;
-
-    LocalTime finalTime;
-
     Long departmentId;
 
     List<Long> academicDegreeId;
+
 }

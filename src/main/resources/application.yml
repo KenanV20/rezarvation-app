@@ -9,3 +9,15 @@ spring:
     hibernate:
       ddl-auto: update
       show-sql: true
+logging:
+  level:
+    com.example.com.example.rezarvationapp.controller: DEBUG
+  pattern:
+    console: '%date{ISO8601} %-5level %class{0}:%L - [%X] %msg%n'
+    file: '%date{ISO8601} %-5level %class{0}:%L - [%X] %msg%n'
+  file:
+    name: application.log
+
+
+
+

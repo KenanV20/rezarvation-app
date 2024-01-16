@@ -32,7 +32,9 @@ public class DoctorEntity {
 
     LocalTime entryTime;
 
-    LocalTime FinalTime;
+    LocalTime finalTime;
+
+    int interval;
 
     @ManyToMany
     @JoinTable(name = "doctor_degree",

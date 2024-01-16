@@ -12,10 +12,11 @@ import java.time.LocalDateTime;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ReservationRequestDto {
 
+
     LocalDateTime appointmentDate;
 
     Long doctorId;
 
-    Long patientId;
+    PatientRequestDto patient;
 
 }
