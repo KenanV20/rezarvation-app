@@ -43,9 +43,7 @@ dependencies {
 
 
 }
-bootJar {
-    archiveFileName = 'rezervationapp.jar'
-}
+
 tasks.named('test') {
     useJUnitPlatform()
 }
